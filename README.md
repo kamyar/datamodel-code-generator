@@ -307,7 +307,8 @@ usage: datamodel-codegen [-h] [--input INPUT] [--url URL]
                          [--use-default] [--force-optional]
                          [--strict-nullable]
                          [--strict-types {str,bytes,int,float,bool} [{str,bytes,int,float,bool} ...]]
-                         [--disable-timestamp] [--use-standard-collections]
+                         [--disable-timestamp] [--enable-version-header] 
+                         [--use-standard-collections]
                          [--use-generic-container-types]
                          [--use-union-operator] [--use-schema-description]
                          [--use-field-description] [--use-default-kwarg]
@@ -378,6 +379,8 @@ options:
   --strict-types {str,bytes,int,float,bool} [{str,bytes,int,float,bool} ...]
                         Use strict types
   --disable-timestamp   Disable timestamp on file headers
+  --enable-version-header
+                        Enable package version on file headers
   --use-standard-collections
                         Use standard collections for type hinting (list, dict)
   --use-generic-container-types
